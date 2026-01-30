@@ -3,10 +3,7 @@ mod routes;
 
 use std::sync::Arc;
 
-use axum::{
-    Router,
-    routing::{delete, get, post},
-};
+use axum::{Router, routing::get};
 use tokio::{sync::RwLock, task::JoinHandle};
 use tracing::trace;
 

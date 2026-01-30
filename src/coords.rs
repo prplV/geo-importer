@@ -1,5 +1,5 @@
 use ordered_float::OrderedFloat;
-use serde::ser::{Serialize, SerializeStruct, Serializer};
+use serde::ser::{Serialize, SerializeStruct};
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Coordinates {

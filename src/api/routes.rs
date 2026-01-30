@@ -5,7 +5,7 @@ use axum::{
 };
 use reqwest::StatusCode;
 
-use crate::{api::data, coords::Coordinates};
+use crate::coords::Coordinates;
 
 use super::data::{Query as Params, RouteState};
 
