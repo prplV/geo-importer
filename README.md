@@ -31,6 +31,22 @@ Specs:
 GET /api/v1/place
 ```
 
+Example response:
+
+```json
+[
+    {
+        "latitude": 52.37125,
+        "longitude": 4.89388
+    },
+    {
+        "latitude": 55.7558,
+        "longitude": 37.6173
+    }
+]
+```
+
+
 ### Delete target coordinate
 
 ```
