@@ -10,4 +10,5 @@ RUN cargo build --release
 
 FROM debian:bookworm-slim
 COPY --from=builder /usr/src/app/target/release/importer /usr/local/bin/importer
+
 CMD ["importer"]
