@@ -17,6 +17,6 @@ ENV OPENSSL_INCLUDE_DIR=/usr/include
 RUN cargo build --release --target x86_64-unknown-linux-musl
 
 FROM alpine:latest
-COPY --from=builder /usr/src/app/target/release/importer /usr/local/bin/importer
+COPY --from=builder /usr/src/app/target/x86_64-unknown-linux-musl/release/importer /usr/local/bin/importer
 
 CMD ["importer"]
